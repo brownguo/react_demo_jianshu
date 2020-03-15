@@ -1,8 +1,10 @@
-//创建store示例
+//创建store实例
 
-import { createStore  } from 'redux';
+import { createStore,compose  } from 'redux';
 import reducer from './reducer';
 
+//ReactExtension
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(reducer,composeEnhancers());
 
-const store = createStore(reducer);
 export default  store;
