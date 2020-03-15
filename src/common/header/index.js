@@ -1,6 +1,7 @@
 import React from 'react';
 import { CSSTransition } from 'react-transition-group';
 import {connect} from 'react-redux';
+import { actionCreators }from './store';
 import {
     HeaderWrapper,
     Logo,
@@ -49,27 +50,23 @@ const Header =  (props) =>{
 };
 
 
+//映射reducer state
 const mapStateToProps = (state) => {
     return {
         focused:state.header.focused
     }
 };
 
+//发送action
 const mapDispathToProps = (dispatch) =>{
     return {
         handleInputFocus(){
-            const action = {
-                type:'header_search_focus'
-            };
-            dispatch(action);
+            dispatch(actionCreators.headerSearchFocus());
         },
         handleInputBlur(){
-            const action = {
-                type:'header_search_blur'
-            };
-            dispatch(action);
+            dispatch(actionCreators.headeSearchBlur());
         }
     }
 };
-
+//链接
 export default connect(mapStateToProps,mapDispathToProps)(Header);

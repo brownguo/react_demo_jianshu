@@ -1,17 +1,19 @@
+import * as actionTypes from './actionTypes';
+
 const defaultState = {
     focused:false
 };
 
 export default (state = defaultState,action) => {
 
-    if(action.type === 'header_search_focus')
+    if(action.type === actionTypes.HEADER_SEARCH_FOCUS)
     {
         return {
             focused:true
         }
     }
 
-    if(action.type === 'header_search_blur')
+    if(action.type === actionTypes.HEADER_SEARCH_BLUR)
     {
         return {
             focused:false
