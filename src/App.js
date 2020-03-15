@@ -1,11 +1,13 @@
-import React from 'react';
+import React,{ Component } from 'react';
 import {GlobalStyled} from './style.js';
-function App() {
-  return (
-    <div className="tony">
-        <GlobalStyled />
-      Hey whats'your name?
-    </div>
-  );
+import Header from './common/header'
+
+
+class App extends Component{
+    render() {
+       return(
+          <Header />
+       )
+    }
 }
 export default App;
