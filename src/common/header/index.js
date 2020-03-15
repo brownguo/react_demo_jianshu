@@ -27,14 +27,14 @@ class Header extends Component{
                     </NavItem>
                     <SearchWrapper>
                         <NavSearch></NavSearch>
-                        <i className='iconfont'>&#xe636;</i>
+                        <i className='iconfont'>&#xe624;</i>
                     </SearchWrapper>
 
                 </Nav>
                 <Addition>
                     <Button className='reg'>注册</Button>
                     <Button className='writting'>
-                        <i className='iconfont'>&#xe636;</i>
+                        <i className='iconfont'>&#xe678;</i>
                         写文章
                     </Button>
                 </Addition>
