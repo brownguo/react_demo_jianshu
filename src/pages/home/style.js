@@ -15,7 +15,7 @@ export const HomeLeft = styled.div`
     float:left;
     .banner-img{
         width:625px;
-        height:270px;
+        height:220px;
     }
 `;
 
