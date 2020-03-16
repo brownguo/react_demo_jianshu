@@ -53,7 +53,7 @@ const Header =  (props) =>{
 //映射reducer state
 const mapStateToProps = (state) => {
     return {
-        focused:state.header.get('focused')
+        focused:state.get('header').get('focused')
     }
 };
 
