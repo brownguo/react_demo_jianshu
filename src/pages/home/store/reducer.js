@@ -8,6 +8,17 @@ const defaultState = fromJS({
             id:2,
             title:'手绘',
         }
+    ],
+    articleList:[{
+        id:1,
+        title:'Jumpman!',
+        desc:'desc..',
+    },
+        {
+            id:2,
+            title:'Air Jordan1!',
+            desc:'desc..'
+        }
     ]
 });
 

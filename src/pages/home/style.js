@@ -15,7 +15,7 @@ export const HomeLeft = styled.div`
     float:left;
     .banner-img{
         width:625px;
-        height:220px;
+        height:100px;
     }
 `;
 
@@ -28,6 +28,7 @@ export const TopicWrapper = styled.div`
     overflow:hidden;
     padding : 20px 0 10px 0;
     margin-left: -10px;
+    border-bottom:1px solid #dcdcdc;
 `;
 
 export const TopicItem = styled.div`
@@ -42,4 +43,13 @@ export const TopicItem = styled.div`
     color:#000;
     border:1px solid #dcdcdc;
     border-radius:4px;
+`;
+
+export const ListItem = styled.div`
+    padding : 20px 0;
+    border-bottom:1px solid #dcdcdc;
+`;
+
+export const ListInfo = styled.div`
+    
 `;
