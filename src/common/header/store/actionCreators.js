@@ -10,7 +10,8 @@ import {fromJS} from 'immutable'
 
 const change_list = (data) =>({
       type:actionTypes.CHANGE_SEARCH_LIST,
-      data:fromJS(data)
+      data:fromJS(data),
+      totalPage:Math.ceil(data.length / 2)
 });
 
 export const headerSearchFocus = () =>({
@@ -32,3 +33,16 @@ export const getList = () =>{
             })
       }
 };
+
+export const mouseEnter = ()=>({
+      type:actionTypes.SEARCH_MOUSE_ENTER
+});
+
+export const mouseLeave = ()=>({
+      type:actionTypes.SEARCH_MOUSE_LEAVE
+});
+
+export const handleSearchList = (page) =>({
+      type:actionTypes.HANDLE_SEARCH_LIST,
+      page
+});
