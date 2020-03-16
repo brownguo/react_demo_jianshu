@@ -5,6 +5,9 @@ import {GlobalStyled} from './style.js';
 import {IconGlobalStyled} from './static/iconfont/iconfont';
 import Header from './common/header'
 
+import Home from './pages/home';
+import Detail from './pages/detail';
+
 import store from './store';
 
 class App extends Component{
@@ -17,8 +20,8 @@ class App extends Component{
                <Provider store={store}>
                    <Header />
                    <BrowserRouter>
-                        <Route exact path='/'>Home</Route>
-                        <Route exact path='/detail'>Detail</Route>
+                        <Route exact path='/' component={Home} />
+                        <Route exact path='/detail' component={Detail} />
                    </BrowserRouter>
               </Provider>
            </Fragment>
