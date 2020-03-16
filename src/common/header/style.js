@@ -126,6 +126,7 @@ export const SearchInfoTitle = styled.div`
 export const SearchInfoSwitch = styled.span`
     float:right;
     font-size:13px;
+    cursor: pointer;
 `;
 
 export const SearchInfoList = styled.div`
@@ -143,6 +144,7 @@ export const SearchInfoItem = styled.a`
     float:left;
     margin-right:10px;
     margin-bottom:15px;
+    cursor: pointer;
 `;
 export const Addition = styled.div`
     position :absolute;
