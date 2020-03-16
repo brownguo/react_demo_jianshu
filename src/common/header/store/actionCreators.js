@@ -12,7 +12,7 @@ export const headeSearchBlur = () =>({
       type:actionTypes.HEADER_SEARCH_BLUR
 });
 
-//异步获取数据，返回的是fromJS函数，redux-thunk中间件
+//异步获取数据都要写在这里， 异步返回的数据都要用fromJS转换一下。
 
 const change_list = (data) =>({
       type:actionTypes.CHANGE_SEARCH_LIST,
