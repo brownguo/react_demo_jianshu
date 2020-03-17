@@ -1,7 +1,7 @@
 import React,{ Component,Fragment } from 'react';
 import { ListItem} from '../style';
 import {connect} from 'react-redux';
-
+import { Link }from 'react-router-dom';
 class List extends Component{
     render() {
         return(
@@ -9,9 +9,11 @@ class List extends Component{
                 {
                     this.props.list.map((item) => {
                         return(
-                            <ListItem key={item.get('id')}>
-                                <h3>{item.get('title')}</h3>
-                            </ListItem>
+                            <Link to={"/detail/"+item.get('id')}  key={item.get('id')}>
+                                <ListItem>
+                                    <h3>{item.get('title')}</h3>
+                                </ListItem>
+                            </Link>
                         )
                     })
                 }

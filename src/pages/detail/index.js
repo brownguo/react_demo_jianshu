@@ -3,7 +3,9 @@ import React,{ Component } from 'react';
 class Detail extends Component{
     render() {
         return(
-            <div>DetailPages</div>
+            <div>
+                { alert(this.props.match.params.id) }
+            </div>
         )
     }
 }
